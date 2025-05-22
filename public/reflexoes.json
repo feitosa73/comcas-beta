@@ -1,0 +1,102 @@
+{
+  "Palavras de Afirmação|Palavras de Afirmação": {
+    "reflexao": "Ambos compartilham a linguagem do amor 'Palavras de Afirmação', o que fortalece naturalmente o vínculo do casal.",
+    "orientacao": "Continuem investindo nessa linguagem. Pequenos gestos diários em 'Palavras de Afirmação' manterão o relacionamento aquecido."
+  },
+  "Palavras de Afirmação|Tempo de Qualidade": {
+    "reflexao": "A esposa valoriza presença dedicada, enquanto o esposo demonstra amor de outra forma.",
+    "orientacao": "O esposo pode reservar momentos de atenção plena, mesmo que rápidos, para comunicar amor de forma eficaz."
+  },
+  "Palavras de Afirmação|Atos de Serviço": {
+    "reflexao": "A esposa sente amor através da ajuda prática, enquanto o esposo se comunica de forma diferente.",
+    "orientacao": "Ofereça ajuda real no dia a dia — um gesto simples pode ser percebido como amor profundo."
+  },
+  "Palavras de Afirmação|Presentes": {
+    "reflexao": "A esposa se sente amada ao receber presentes, e o esposo expressa amor de outra forma.",
+    "orientacao": "Pequenas lembranças simbólicas podem comunicar grandes afetos. Não é sobre valor, mas sobre intenção."
+  },
+  "Palavras de Afirmação|Toque Físico": {
+    "reflexao": "O esposo precisa de palavras que elevem, enquanto a esposa se sente amada pelo contato físico.",
+    "orientacao": "Unam gestos e palavras: ao abraçar, diga algo positivo. O equilíbrio entre verbalizar e tocar será chave aqui."
+  },
+  "Tempo de Qualidade|Palavras de Afirmação": {
+    "reflexao": "O esposo se conecta com tempo juntos, mas a esposa tem outra linguagem principal.",
+    "orientacao": "Planeje momentos a dois que incorporem a linguagem da esposa. O tempo dedicado será mais eficaz se vier adaptado ao que ela valoriza."
+  },
+  "Tempo de Qualidade|Tempo de Qualidade": {
+    "reflexao": "Ambos compartilham a linguagem do amor 'Tempo de Qualidade', o que fortalece naturalmente o vínculo do casal.",
+    "orientacao": "Continuem investindo nessa linguagem. Pequenos gestos diários em 'Tempo de Qualidade' manterão o relacionamento aquecido."
+  },
+  "Tempo de Qualidade|Atos de Serviço": {
+    "reflexao": "O esposo se conecta com tempo juntos, mas a esposa tem outra linguagem principal.",
+    "orientacao": "Planeje momentos a dois que incorporem a linguagem da esposa. O tempo dedicado será mais eficaz se vier adaptado ao que ela valoriza."
+  },
+  "Tempo de Qualidade|Presentes": {
+    "reflexao": "O esposo se conecta com tempo juntos, mas a esposa tem outra linguagem principal.",
+    "orientacao": "Planeje momentos a dois que incorporem a linguagem da esposa. O tempo dedicado será mais eficaz se vier adaptado ao que ela valoriza."
+  },
+  "Tempo de Qualidade|Toque Físico": {
+    "reflexao": "O esposo se conecta com tempo juntos, mas a esposa tem outra linguagem principal.",
+    "orientacao": "Planeje momentos a dois que incorporem a linguagem da esposa. O tempo dedicado será mais eficaz se vier adaptado ao que ela valoriza."
+  },
+  "Atos de Serviço|Palavras de Afirmação": {
+    "reflexao": "A esposa precisa ouvir que é amada, enquanto o esposo tem outra forma de demonstrar.",
+    "orientacao": "Inclua verbalizações sinceras no cotidiano. Um elogio pode transformar o dia dela."
+  },
+  "Atos de Serviço|Tempo de Qualidade": {
+    "reflexao": "A esposa valoriza presença dedicada, enquanto o esposo demonstra amor de outra forma.",
+    "orientacao": "O esposo pode reservar momentos de atenção plena, mesmo que rápidos, para comunicar amor de forma eficaz."
+  },
+  "Atos de Serviço|Atos de Serviço": {
+    "reflexao": "Ambos compartilham a linguagem do amor 'Atos de Serviço', o que fortalece naturalmente o vínculo do casal.",
+    "orientacao": "Continuem investindo nessa linguagem. Pequenos gestos diários em 'Atos de Serviço' manterão o relacionamento aquecido."
+  },
+  "Atos de Serviço|Presentes": {
+    "reflexao": "A esposa se sente amada ao receber presentes, e o esposo expressa amor de outra forma.",
+    "orientacao": "Pequenas lembranças simbólicas podem comunicar grandes afetos. Não é sobre valor, mas sobre intenção."
+  },
+  "Atos de Serviço|Toque Físico": {
+    "reflexao": "A esposa sente-se amada com gestos de carinho e proximidade física.",
+    "orientacao": "O esposo pode usar abraços, beijos e toque gentil para expressar cuidado e atenção, mesmo que sua linguagem seja outra."
+  },
+  "Presentes|Palavras de Afirmação": {
+    "reflexao": "A esposa precisa ouvir que é amada, enquanto o esposo tem outra forma de demonstrar.",
+    "orientacao": "Inclua verbalizações sinceras no cotidiano. Um elogio pode transformar o dia dela."
+  },
+  "Presentes|Tempo de Qualidade": {
+    "reflexao": "A esposa valoriza presença dedicada, enquanto o esposo demonstra amor de outra forma.",
+    "orientacao": "O esposo pode reservar momentos de atenção plena, mesmo que rápidos, para comunicar amor de forma eficaz."
+  },
+  "Presentes|Atos de Serviço": {
+    "reflexao": "A esposa sente amor através da ajuda prática, enquanto o esposo se comunica de forma diferente.",
+    "orientacao": "Ofereça ajuda real no dia a dia — um gesto simples pode ser percebido como amor profundo."
+  },
+  "Presentes|Presentes": {
+    "reflexao": "Ambos compartilham a linguagem do amor 'Presentes', o que fortalece naturalmente o vínculo do casal.",
+    "orientacao": "Continuem investindo nessa linguagem. Pequenos gestos diários em 'Presentes' manterão o relacionamento aquecido."
+  },
+  "Presentes|Toque Físico": {
+    "reflexao": "A esposa sente-se amada com gestos de carinho e proximidade física.",
+    "orientacao": "O esposo pode usar abraços, beijos e toque gentil para expressar cuidado e atenção, mesmo que sua linguagem seja outra."
+  },
+  "Toque Físico|Palavras de Afirmação": {
+    "reflexao": "O esposo precisa de palavras que elevem, enquanto a esposa se sente amada pelo contato físico.",
+    "orientacao": "Unam gestos e palavras: ao abraçar, diga algo positivo. O equilíbrio entre verbalizar e tocar será chave aqui."
+  },
+  "Toque Físico|Tempo de Qualidade": {
+    "reflexao": "A esposa valoriza presença dedicada, enquanto o esposo demonstra amor de outra forma.",
+    "orientacao": "O esposo pode reservar momentos de atenção plena, mesmo que rápidos, para comunicar amor de forma eficaz."
+  },
+  "Toque Físico|Atos de Serviço": {
+    "reflexao": "A esposa sente amor através da ajuda prática, enquanto o esposo se comunica de forma diferente.",
+    "orientacao": "Ofereça ajuda real no dia a dia — um gesto simples pode ser percebido como amor profundo."
+  },
+  "Toque Físico|Presentes": {
+    "reflexao": "A esposa se sente amada ao receber presentes, e o esposo expressa amor de outra forma.",
+    "orientacao": "Pequenas lembranças simbólicas podem comunicar grandes afetos. Não é sobre valor, mas sobre intenção."
+  },
+  "Toque Físico|Toque Físico": {
+    "reflexao": "Ambos compartilham a linguagem do amor 'Toque Físico', o que fortalece naturalmente o vínculo do casal.",
+    "orientacao": "Continuem investindo nessa linguagem. Pequenos gestos diários em 'Toque Físico' manterão o relacionamento aquecido."
+  }
+}

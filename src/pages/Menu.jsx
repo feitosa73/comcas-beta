@@ -1,33 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-import Header from '../components/Header';
 import MenuCard from '../components/MenuCard';
 
 const Menu = () => {
-  const { user, logout } = useAuth0();
+  const { user } = useAuth0();
+  const navigate = useNavigate();
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-6xl">
-      <div className="flex justify-between items-center mb-8">
-        <Header title="Comunicação no Casamento" showBackButton={false} />
-        <div className="flex items-center">
-          <div className="mr-4 text-right">
-            <p className="font-medium">{user?.name}</p>
-            <p className="text-sm text-gray-600">{user?.email}</p>
-          </div>
-          <button 
-            onClick={() => logout({ returnTo: window.location.origin })}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded-md"
-          >
-            Sair
-          </button>
-        </div>
+    <div className="max-w-6xl mx-auto">
+      <div className="mb-8">
+        <h1 className="text-2xl md:text-3xl font-bold text-gray-800">Comunicação no Casamento</h1>
+        <p className="text-lg text-gray-700 mt-4">
+          Bem-vindo ao sistema de apoio para casais da nossa comunidade. 
+          Aqui você encontrará ferramentas para fortalecer a comunicação no seu casamento.
+        </p>
       </div>
-
-      <p className="text-lg text-gray-700 mb-8">
-        Bem-vindo ao sistema de apoio para casais da nossa comunidade. 
-        Aqui você encontrará ferramentas para fortalecer a comunicação no seu casamento.
-      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <MenuCard 

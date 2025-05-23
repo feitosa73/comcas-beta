@@ -2,14 +2,24 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
 
+// Importação de módulos
+import { DiscRoutes } from './modules/disc';
+import { LinguagensRoutes } from './modules/linguagens';
+import { CirculosRoutes } from './modules/circulos';
+
+// Componentes de layout e autenticação
+import Layout from './layout/Layout';
 import Login from './pages/Login';
 import Menu from './pages/Menu';
-import DISC from './pages/DISC';
-import CirculosRelacionamento from './pages/CirculosRelacionamento';
-import LinguagensDoAmor from './pages/LinguagensDoAmor';
-import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
+  // Agregação de todas as rotas dos módulos
+  const moduleRoutes = [
+    ...DiscRoutes,
+    ...LinguagensRoutes,
+    ...CirculosRoutes
+  ];
+
   return (
     <Auth0Provider
       domain="dev-w73ygxm7ju124rjf.us.auth0.com"
@@ -18,39 +28,25 @@ function App() {
     >
       <Router>
         <Routes>
+          {/* Rota pública de login */}
           <Route path="/" element={<Login />} />
-          <Route 
-            path="/menu" 
-            element={
-              <ProtectedRoute>
-                <Menu />
-              </ProtectedRoute>
-            } 
-          />
-          <Route 
-            path="/disc" 
-            element={
-              <ProtectedRoute>
-                <DISC />
-              </ProtectedRoute>
-            } 
-          />
-          <Route 
-            path="/circulos" 
-            element={
-              <ProtectedRoute>
-                <CirculosRelacionamento />
-              </ProtectedRoute>
-            } 
-          />
-          <Route 
-            path="/linguagens" 
-            element={
-              <ProtectedRoute>
-                <LinguagensDoAmor />
-              </ProtectedRoute>
-            } 
-          />
+          
+          {/* Rotas protegidas dentro do layout */}
+          <Route element={<Layout />}>
+            {/* Rota do menu principal */}
+            <Route path="/menu" element={<Menu />} />
+            
+            {/* Rotas dinâmicas dos módulos */}
+            {moduleRoutes.map((route) => (
+              <Route
+                key={route.path}
+                path={route.path}
+                element={route.element}
+              />
+            ))}
+          </Route>
+          
+          {/* Rota de fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>

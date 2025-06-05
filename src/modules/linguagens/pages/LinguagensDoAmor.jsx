@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import Header from '../../../components/Header';
-import reflexoes from '../../../../public/reflexoes.json';
+import Header from "@/components/Header";
+// Para o JSON na pasta public, o alias não ajuda diretamente.
+// A melhor forma é usar fetch como fizemos antes, ou mover para src/data.
+// Vamos manter o fetch por enquanto, se você já o implementou, ou usar o caminho relativo longo se não:
+import reflexoes from "@/../public/reflexoes.json"; // Usando alias para sair da src
+
 
 const LinguagensDoAmor = () => {
   const [page, setPage] = useState(0);

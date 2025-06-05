@@ -1,13 +1,20 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Login = () => {
   const { isAuthenticated, loginWithRedirect } = useAuth0();
+  const navigate = useNavigate(); // Initialize useNavigate
 
   if (isAuthenticated) {
+    // If already authenticated, redirect to menu
     return <Navigate to="/menu" replace />;
   }
+
+  // Handler for anonymous access
+  const handleAnonymousAccess = () => {
+    navigate('/menu'); // Navigate to the menu page
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
@@ -24,10 +31,10 @@ const Login = () => {
             Este sistema oferece ferramentas para melhorar a comunicação e o entendimento entre casais,
             com base nos conceitos apresentados nos encontros da nossa comunidade.
           </p>
-          
+
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
             <p className="text-sm text-blue-700">
-              Faça login para acessar os módulos:
+              Acesse os módulos:
             </p>
             <ul className="list-disc pl-5 mt-2 text-sm text-blue-700">
               <li>Perfil DISC</li>
@@ -37,12 +44,22 @@ const Login = () => {
           </div>
         </div>
 
+        {/* Auth0 Login Button */}
         <button
           onClick={() => loginWithRedirect()}
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-md font-medium transition-all"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-md font-medium transition-all mb-4" // Added margin bottom
         >
-          Entrar com Auth0
+          Entrar com Auth0 (Recomendado)
         </button>
+
+        {/* Anonymous Access Button */}
+        <button
+          onClick={handleAnonymousAccess}
+          className="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 px-4 rounded-md font-medium transition-all"
+        >
+          Acessar como Visitante
+        </button>
+
       </div>
     </div>
   );

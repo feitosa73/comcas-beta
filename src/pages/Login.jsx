@@ -1,20 +1,14 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Navigate, useNavigate } from 'react-router-dom'; // Import useNavigate
+import { Navigate } from 'react-router-dom';
 
 const Login = () => {
   const { isAuthenticated, loginWithRedirect } = useAuth0();
-  const navigate = useNavigate(); // Initialize useNavigate
 
   if (isAuthenticated) {
-    // If already authenticated, redirect to menu
+    // Se já estiver autenticado, redireciona para o menu
     return <Navigate to="/menu" replace />;
   }
-
-  // Handler for anonymous access
-  const handleAnonymousAccess = () => {
-    navigate('/menu'); // Navigate to the menu page
-  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
@@ -28,7 +22,7 @@ const Login = () => {
 
         <div className="mb-8">
           <p className="text-gray-700 mb-4">
-            Este sistema oferece ferramentas para melhorar a comunicação e o entendimento entre casais,
+            Este sistema offers ferramentas para melhorar a comunicação e o entendimento entre casais,
             com base nos conceitos apresentados nos encontros da nossa comunidade.
           </p>
 
@@ -44,20 +38,12 @@ const Login = () => {
           </div>
         </div>
 
-        {/* Auth0 Login Button */}
+        {/* Auth0 Login Button - Única porta de entrada agora */}
         <button
           onClick={() => loginWithRedirect()}
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-md font-medium transition-all mb-4" // Added margin bottom
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-md font-medium transition-all"
         >
           Entrar com Auth0 (Recomendado)
-        </button>
-
-        {/* Anonymous Access Button */}
-        <button
-          onClick={handleAnonymousAccess}
-          className="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 px-4 rounded-md font-medium transition-all"
-        >
-          Acessar como Visitante
         </button>
 
       </div>

@@ -2,18 +2,18 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-// ImportaÃ§Ã£o de mÃ³dulos
+// Importação de módulos
 import { DiscRoutes } from './modules/disc';
 import { LinguagensRoutes } from './modules/linguagens';
 import { CirculosRoutes } from './modules/circulos';
 
-// Componentes de layout e autenticaÃ§Ã£o
+// Componentes de layout e autenticação
 import Layout from './layout/Layout';
 import Login from './pages/Login';
 import Menu from './pages/Menu';
 
 function App() {
-  // AgregaÃ§Ã£o de todas as rotas dos mÃ³dulos
+  // Agregação de todas as rotas dos módulos
   const moduleRoutes = [
     ...DiscRoutes,
     ...LinguagensRoutes,
@@ -22,13 +22,13 @@ function App() {
 
   return (
     <Auth0Provider
-      domain="dev-w73ygxm7ju124rjf.us.auth0.com"
-      clientId="c6ZNd97V7W7hCWDmYKOsl8xMZPuDTZiw"
+      domain={import.meta.env.VITE_AUTH0_DOMAIN}
+      clientId={import.meta.env.VITE_AUTH0_CLIENT_ID}
       redirectUri={window.location.origin}
     >
       <Router>
         <Routes>
-          {/* Rota pÃºblica de login */}
+          {/* Rota pública de login */}
           <Route path="/" element={<Login />} />
           
           {/* Rotas protegidas dentro do layout */}
@@ -36,7 +36,7 @@ function App() {
             {/* Rota do menu principal */}
             <Route path="/menu" element={<Menu />} />
             
-            {/* Rotas dinÃ¢micas dos mÃ³dulos */}
+            {/* Rotas dinâmicas dos módulos */}
             {moduleRoutes.map((route) => (
               <Route
                 key={route.path}
